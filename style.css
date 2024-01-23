@@ -9,6 +9,7 @@ html {
 
 body {
     background-color:hsl(0, 0%, 8%);
+    width: 100%;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -79,7 +80,7 @@ button {
     background-color: hsl(0, 0%, 20%);
     border: none;
     border-radius: 7px;
-    width: 17.6rem;
+    width: 17.8rem;
     height: 2.5rem;
     font-size: .85rem;
     font-weight: 600;
@@ -103,16 +104,36 @@ button:hover {
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
+    
+    html {
+        font-size: .98rem;
+    }
+
+    body {
+       margin: 10rem 0;
+        height: 100vh;
+    }
+
+
     #container {
-        min-width: none;
-        width: 85vw;
+        width: 80vw;
+        margin: 0 1rem;
+    }
+
+    #profile > img {
+        width: 5rem;
     }
 
     button {
-        min-width: 45vw;    
-        width: 85vw;
+        min-width: 16rem;
+        width: 14rem;
     }
+
+    .attribution {
+        width: 10rem;
+    }
+
 }
 
 
