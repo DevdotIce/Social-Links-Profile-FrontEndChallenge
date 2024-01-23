@@ -1,0 +1,119 @@
+/* <!-- Feel free to remove these styles or customise in your own stylesheet 👍 --> */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color:hsl(0, 0%, 8%);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+
+#container {
+    background-color: hsl(0, 0%, 12%);
+    margin: 1rem 0;
+    padding: .6rem 1rem;
+    width: 20rem;
+    height: auto;
+    border-radius: 7px;
+    display: flex;
+    flex-flow: column;
+    
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    margin: 1.8rem 0 1.1rem 0;
+}
+
+#profile > img {
+    clip-path: circle(50% at 50% 50%);
+    width: 6rem;
+}
+
+
+#name-loc-job {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+#name-loc-job > h2 {
+    font-size: 1.5rem;
+    margin: .6rem 0;
+}
+
+#name-loc-job > p:nth-child(2){
+    font-size: .9rem;
+    font-weight: 600;
+    color: hsl(75, 94%, 57%);
+    margin: .3rem 0 1.8rem 0;
+
+}
+
+#name-loc-job > p:nth-child(3){
+    font-size: .8rem;
+    padding-bottom: .5rem;
+}
+
+.media-links {
+    height: 17rem;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+button {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    border-radius: 7px;
+    width: 17.6rem;
+    height: 2.5rem;
+    font-size: .85rem;
+    font-weight: 600;
+    margin: .4rem;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 30%);
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: rgb(94, 94, 94);
+}
+    
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 450px) {
+    #container {
+        min-width: none;
+        width: 85vw;
+    }
+
+    button {
+        min-width: 45vw;    
+        width: 85vw;
+    }
+}
+
+
+
